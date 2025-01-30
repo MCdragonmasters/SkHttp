@@ -98,7 +98,7 @@ public class SecWebhookBuilder extends Section {
             }
         }
         if (embed != null){
-            builder.addEmbeds(this.embed.getArray(e));
+            builder.addEmbeds(this.embed.getSingle(e));
         }
         var.change(e, new DiscordWebHook[]{builder}, Changer.ChangeMode.SET);
     }
